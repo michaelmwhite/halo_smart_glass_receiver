@@ -7,6 +7,7 @@ void setup()
 {
   Serial.begin(9600);
   Serial.println("< Running Halo Smart Glass Receiver >");
+  initScreenController();
 }
 void loop()
 {
@@ -19,6 +20,7 @@ void loop()
     }else{
       messageBuffer[index] = '\0';
       Serial.println(messageBuffer);
+      showText(messageBuffer);
       index = 0;
     }
   }
