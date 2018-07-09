@@ -1,5 +1,5 @@
 const byte MAX_MESSAGE_LENGTH = 64;
-const char MESSAGE_TERMINATOR = '!';
+const char MESSAGE_TERMINATOR = '`';
 char messageBuffer[MAX_MESSAGE_LENGTH];
 byte index = 0;
 
